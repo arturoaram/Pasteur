@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="800dp"
+        android:layout_height="250dp"
+        android:id="@+id/imageView2"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/cuadrossintexto"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/submitImage"
+        android:src="@drawable/cuadrosubmit"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="40dp"
+        android:layout_marginEnd="40dp" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/cancelImage"
+        android:layout_centerVertical="true"
+        android:src="@drawable/cuadrocancel"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="50dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/productNameText"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="65dp"
+        android:layout_alignLeft="@+id/cancelImage"
+        android:layout_alignStart="@+id/cancelImage"
+        android:layout_alignRight="@+id/submitImage"
+        android:layout_alignEnd="@+id/submitImage"
+        android:hint="Enter Product Name"
+        android:textColor="#010101" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/priceText"
+        android:layout_above="@+id/cancelImage"
+        android:layout_alignLeft="@+id/cancelImage"
+        android:layout_alignStart="@+id/cancelImage"
+        android:layout_alignRight="@+id/productNameText"
+        android:layout_alignEnd="@+id/productNameText"
+        android:hint="Enter Price"
+        android:textColor="#000000" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_above="@+id/priceText"
+        android:layout_alignLeft="@+id/priceText"
+        android:layout_alignStart="@+id/priceText"
+        android:layout_marginBottom="21dp"
+        android:layout_alignRight="@+id/submitImage"
+        android:layout_alignEnd="@+id/submitImage"
+        android:layout_below="@+id/productNameText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Add a Product"
+        android:id="@+id/textView5"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textIsSelectable="false"
+        android:textColor="#ffffff" />
+</RelativeLayout>
